@@ -26,6 +26,13 @@
 10. 로그인 기능을 진행한다.
 11. 파일이용이 종료 된 후 재접근을 하지 않겠다는 N입력 전까지 8~10번 과정을 반복한다.
 
+# 동작 실험 
+![image](https://user-images.githubusercontent.com/39155520/98086561-50062200-1ec2-11eb-81f2-e4e1a8fc8035.png)
+![image](https://user-images.githubusercontent.com/39155520/98086600-5ac0b700-1ec2-11eb-9e1d-baf288754efc.png)
+
+파일 접근 권한 부여 받았을 때
+![image](https://user-images.githubusercontent.com/39155520/98086637-657b4c00-1ec2-11eb-87a9-341ea1524692.png)
+파일 접근 권한이  때
 ![image](https://user-images.githubusercontent.com/39155520/98086225-cce4cc00-1ec1-11eb-9f90-3236be2cb9a8.png)
 
 

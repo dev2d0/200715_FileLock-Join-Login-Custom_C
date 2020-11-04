@@ -2,8 +2,8 @@
 ## 파일잠금, 사용자 지정 설정 프로그램 
 
 # 요약
-사용자 인터랙션에 따라 회원가입 과정을 진행하고, 파일에 접근 하려면 로그인 과정을 통해 권한을 부여받아야 합니다. 옳바른 루트를 통해 로그인에 성공했다면 파일에 접근 할 수 있는 권한을 얻습니다. 
-회원가입과 로그인 기능을 통한 파일 접근 권한 부여 및 사용자가 직접 사용시간을 설정할 수 있도록 하였다.
+사용자 인터랙션에 따라 회원가입 과정을 진행하고, 파일에 접근 하려면 로그인 과정을 통해 권한을 부여받아야 합니다.<br/> 옳바른 루트를 통해 로그인에 성공했다면 파일에 접근 할 수 있는 권한을 얻습니다. <br/>
+회원가입과 로그인 기능을 통한 파일 접근 권한 부여 및 사용자가 직접 사용시간을 설정할 수 있도록 하였습니다.
 
 # 기능
 주요기능 1 : 회원가입과 로그인 기능을 통한 사용자 식별기능.<br/>
@@ -28,36 +28,36 @@
 
 # 시스템호출과 라이브러리 
 
-#include <signal.h>
-#include <unistd.h>
-#include <setjmp.h>
-#include <sys/types.h>
-#include <fcntl.h>
-#include <pthread.h>
-#include <unistd.h>
-#include <sys/time.h>
-#include <sys/stat.h>
+#include <signal.h><br/>
+#include <unistd.h><br/>
+#include <setjmp.h><br/>
+#include <sys/types.h><br/>
+#include <fcntl.h><br/>
+#include <pthread.h><br/>
+#include <unistd.h><br/>
+#include <sys/time.h><br/>
+#include <sys/stat.h><br/>
 
-pthread_mutex_t mutex_lock   = PTHREAD_MUTEX_INITIALIZER;
-pthread_cond_t   thread_cond  = PTHREAD_COND_INITIALIZER;
-jmp_buf jmpbuffer;
-pthread_mutex_lock(&mutex_lock);
-pthread_mutex_unlock(&mutex_lock);
-sleep(timer);
-chmod("test.txt", 00644)
-gettimeofday( &tv, NULL );
-alarm(30);
-setjmp(jmpbuffer);
-pthread_create(&threadID1,NULL, file_change, NULL);
-pthread_join(threadID1, NULL);
-pthread_mutex_init(&mutex_lock,NULL);
-pthread_cond_destroy(&thread_cond);
-등등
+pthread_mutex_t mutex_lock   = PTHREAD_MUTEX_INITIALIZER;<br/>
+pthread_cond_t   thread_cond  = PTHREAD_COND_INITIALIZER;<br/>
+jmp_buf jmpbuffer;<br/>
+pthread_mutex_lock(&mutex_lock);<br/>
+pthread_mutex_unlock(&mutex_lock);<br/>
+sleep(timer);<br/>
+chmod("test.txt", 00644)<br/>
+gettimeofday( &tv, NULL );<br/>
+alarm(30);<br/>
+setjmp(jmpbuffer);<br/>
+pthread_create(&threadID1,NULL, file_change, NULL);<br/>
+pthread_join(threadID1, NULL);<br/>
+pthread_mutex_init(&mutex_lock,NULL);<br/>
+pthread_cond_destroy(&thread_cond);<br/>
+등등<br/>
 
-파일에 대한 접근 권한을 변경 할 수 있다.
-현재 시간을 받아와 날짜를 설정 할 수 있다.
-쓰래드의 생성과 뮤텍스를 통해 자원을 효율적으로 관리 할 수 있다.
-시그널과 알람을 통해 시간제한을 설정 할 수 있다,
+파일에 대한 접근 권한을 변경 할 수 있다.<br/>
+현재 시간을 받아와 날짜를 설정 할 수 있다.<br/>
+쓰래드의 생성과 뮤텍스를 통해 자원을 효율적으로 관리 할 수 있다.<br/>
+시그널과 알람을 통해 시간제한을 설정 할 수 있다,<br/>
 
 
 

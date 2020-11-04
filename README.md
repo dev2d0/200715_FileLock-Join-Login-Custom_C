@@ -33,7 +33,7 @@
 # 파일 접근 실험
 파일 접근 권한 부여 받았을 때<br/>
 ![image](https://user-images.githubusercontent.com/39155520/98086637-657b4c00-1ec2-11eb-87a9-341ea1524692.png)<br/>
-파일 접근 권한이  때<br/>
+파일 접근 권한이 없을 때<br/>
 ![image](https://user-images.githubusercontent.com/39155520/98086225-cce4cc00-1ec1-11eb-9f90-3236be2cb9a8.png)<br/>
 
 

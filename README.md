@@ -6,12 +6,11 @@
 회원가입과 로그인 기능을 통한 파일 접근 권한 부여 및 사용자가 직접 사용시간을 설정할 수 있도록 하였다.
 
 # 기능
-주요기능 1 : 회원가입과 로그인 기능을 통한 사용자 식별기능
-주요기능 2 : 멀티쓰레드 기능과 뮤텍스락 기능을 이용하여 자원 관리
-주요기능 3 : 시그널과 알람을 통한 사용자 지정 시간 설정 
-주요기능 4 : 접근 권한을 변경하여 파일에 대한 접근을 부여 및 차단
-
-주요기능 4 : 접근 권한을 변경하여 파일에 대한 접근을 부여 및 차단
+주요기능 1 : 회원가입과 로그인 기능을 통한 사용자 식별기능.
+주요기능 2 : 멀티쓰레드 기능과 뮤텍스락 기능을 이용하여 자원 관리.
+주요기능 3 : 시그널과 알람을 통한 사용자 지정 시간 설정.
+주요기능 4 : 접근 권한을 변경하여 파일에 대한 접근을 부여 및 차단.
+주요기능 4 : 접근 권한을 변경하여 파일에 대한 접근을 부여 및 차단.
 
 
 # 구현 내용 및 방법 
@@ -25,19 +24,19 @@
 8. 파일 수정이 아직 끝나지 못한 경우를 대비해 재접근 의사를 물어본다.
 9. 재접근을 하기 원한다면 파일 이용시간을 설정한다.
 10. 로그인 기능을 진행한다.
-11. 파일이용이 종료 된 후 재접근을 하지 않겠다는 N입력 전까지 8~10번 과정을 반복한다
+11. 파일이용이 종료 된 후 재접근을 하지 않겠다는 N입력 전까지 8~10번 과정을 반복한다.
 
-#사용한 라이브러리 및 기능
+# 시스템호출과 라이브러리 
 
-include <signal.h>
-include <unistd.h>
-include <setjmp.h>
-include <sys/types.h>
-include <fcntl.h>
-include <pthread.h>
-include <unistd.h>
-include <sys/time.h>
-include <sys/stat.h>
+#include <signal.h>
+#include <unistd.h>
+#include <setjmp.h>
+#include <sys/types.h>
+#include <fcntl.h>
+#include <pthread.h>
+#include <unistd.h>
+#include <sys/time.h>
+#include <sys/stat.h>
 
 pthread_mutex_t mutex_lock   = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t   thread_cond  = PTHREAD_COND_INITIALIZER;

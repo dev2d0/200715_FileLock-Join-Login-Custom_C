@@ -26,6 +26,9 @@
 10. 로그인 기능을 진행한다.
 11. 파일이용이 종료 된 후 재접근을 하지 않겠다는 N입력 전까지 8~10번 과정을 반복한다.
 
+![image](https://user-images.githubusercontent.com/39155520/98086225-cce4cc00-1ec1-11eb-9f90-3236be2cb9a8.png)
+
+
 # 시스템호출과 라이브러리 
 
 #include <signal.h><br/>
